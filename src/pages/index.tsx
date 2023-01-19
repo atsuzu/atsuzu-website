@@ -16,9 +16,8 @@ const Index = () => {
         height="763"
         src="https://youtu.be/uWS_19srKVs"
         title="YouTube video player"
-        frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
+        allowFullScreen
       ></iframe>
     </Main>
   );
