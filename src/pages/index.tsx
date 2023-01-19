@@ -16,7 +16,7 @@ const Index = () => {
       <iframe
         width="1280"
         height="763"
-        src="https://youtu.be/embed/uWS_19srKVs"
+        src="https://www.youtube.com/embed/uWS_19srKVs"
         title="Youtube Subscription Date Video"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
