@@ -10,11 +10,11 @@ describe('About page', () => {
     it('should have one paragraph of `I just created this website using a boilerplate code`', () => {
       render(<About />);
 
-      const paragraph = screen.getAllByText(
+      const paragraph = screen.queryByText(
         /I just created this website using a boilerplate code/
       );
 
-      expect(paragraph).toHaveLength(1);
+      expect(paragraph).toBeInTheDocument();
     });
   });
 });
