@@ -9,17 +9,16 @@ describe('Navigation', () => {
         name: 'Home',
       });
 
-      // Find a link containing "About" text and click it
+      // Find a link containing 'About' text and click it
       cy.findByRole('link', { name: 'About' }).click();
 
-      // The new url should include "/about"
+      // The new url should include '/about'
       cy.url().should('include', '/about');
 
-      // The new page should contain two "lorem ipsum" paragraphs
-      cy.findAllByText('I just created this website using a boilerplate code', { exact: false }).should(
-        'have.length',
-        1
-      );
+      // The new page should contain two 'lorem ipsum' paragraphs
+      cy.findAllByText('I just created this website using a boilerplate code', {
+        exact: false,
+      }).should('have.length', 1);
     });
 
     it('should take screenshot of the homepage', () => {
