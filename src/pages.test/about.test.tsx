@@ -7,12 +7,14 @@ import About from '@/pages/about';
 
 describe('About page', () => {
   describe('Render method', () => {
-    it('should have two paragraphs of `Lorem ipsum`', () => {
+    it('should have one paragraph of `I just created this website using a boilerplate code`', () => {
       render(<About />);
 
-      const paragraph = screen.getAllByText(/Lorem ipsum/);
+      const paragraph = screen.getAllByText(
+        /I just created this website using a boilerplate code/
+      );
 
-      expect(paragraph).toHaveLength(2);
+      expect(paragraph).toHaveLength(1);
     });
   });
 });
