@@ -11,11 +11,13 @@ const Index = () => {
         />
       }
     >
+      <h1 className="text-2xl font-bold">Home</h1>
+
       <iframe
         width="1280"
         height="763"
         src="https://youtu.be/uWS_19srKVs"
-        title="YouTube video player"
+        title="Youtube Subscription Date Video"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe>
