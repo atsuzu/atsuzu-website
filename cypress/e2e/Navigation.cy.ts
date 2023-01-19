@@ -6,7 +6,7 @@ describe('Navigation', () => {
 
       // The index page should contain an h1
       cy.findByRole('heading', {
-        name: 'Boilerplate code for your Nextjs project with Tailwind CSS',
+        name: 'Home',
       });
 
       // Find a link containing "About" text and click it
@@ -16,9 +16,9 @@ describe('Navigation', () => {
       cy.url().should('include', '/about');
 
       // The new page should contain two "lorem ipsum" paragraphs
-      cy.findAllByText('Lorem ipsum dolor sit amet', { exact: false }).should(
+      cy.findAllByText('I just created this website using a boilerplate code', { exact: false }).should(
         'have.length',
-        2
+        1
       );
     });
 
@@ -27,7 +27,7 @@ describe('Navigation', () => {
 
       // Wait until the page is displayed
       cy.findByRole('heading', {
-        name: 'Boilerplate code for your Nextjs project with Tailwind CSS',
+        name: 'Home',
       });
 
       cy.percySnapshot('Homepage');
