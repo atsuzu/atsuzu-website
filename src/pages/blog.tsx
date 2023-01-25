@@ -3,10 +3,7 @@ import { Main } from '@/templates/Main';
 
 const Blog = () => (
   <Main meta={<Meta title="Lorem ipsum" description="Lorem ipsum" />}>
-    <p>
-      Coming Soon...
-    </p>
-
+    <p>Coming Soon...</p>
   </Main>
 );
 
