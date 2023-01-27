@@ -4,10 +4,16 @@ import { Main } from '@/templates/Main';
 const About = () => (
   <Main meta={<Meta title="Lorem ipsum" description="Lorem ipsum" />}>
     <p>
-      Hello, I just created this website using a boilerplate code provided by
-      https://github.com/ixartz/Next-js-Boilerplate. I will be adding projects
-      that I have/will be working on as well as a quick tutorial on how it was
-      built from time to time.
+      What the application does: YoutubeSubscriptionDate is an app that displays
+      when you <strong>last</strong> subscribed to the channel.
+    </p>
+    <p>
+      What will this application do with user data: YoutubeSubscriptionDate
+      needs access to retrieve user information on when the user subscribed to a
+      channel.
+    </p>
+    <p>
+      Link to privacy policy: <a href="/privacy-policy/">Click here</a>
     </p>
   </Main>
 );
