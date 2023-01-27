@@ -16,7 +16,7 @@ describe('Navigation', () => {
       cy.url().should('include', '/about');
 
       // The new page should contain two 'lorem ipsum' paragraphs
-      cy.findAllByText('I just created this website using a boilerplate code', {
+      cy.findAllByText('What the application does', {
         exact: false,
       }).should('have.length', 1);
     });
