@@ -7,11 +7,11 @@ import About from '@/pages/about';
 
 describe('About page', () => {
   describe('Render method', () => {
-    it('should have one paragraph of `I just created this website using a boilerplate code`', () => {
+    it('should have one paragraph of `What the application does`', () => {
       render(<About />);
 
       const paragraph = screen.queryByText(
-        /I just created this website using a boilerplate code/
+        /What the application does/
       );
 
       expect(paragraph).toBeInTheDocument();

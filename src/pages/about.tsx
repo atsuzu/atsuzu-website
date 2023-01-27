@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
 
@@ -13,7 +14,7 @@ const About = () => (
       channel.
     </p>
     <p>
-      Link to privacy policy: <a href="/privacy-policy/">Click here</a>
+      Link to privacy policy: <Link href="/privacy-policy/">Click here</Link>
     </p>
   </Main>
 );
