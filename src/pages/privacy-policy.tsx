@@ -2,7 +2,14 @@ import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
 
 const PrivacyPolicy = () => (
-  <Main meta={<Meta title="Lorem ipsum" description="Lorem ipsum" />}>
+  <Main
+    meta={
+      <Meta
+        title="Atsuzu Portfolio | Privacy-Policy"
+        description="Contains the privacy policy of the application"
+      />
+    }
+  >
     <h1 className="text-2xl font-bold">Privacy Policy</h1>
     <ul>
       <li>

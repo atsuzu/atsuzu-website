@@ -6,7 +6,7 @@ const Index = () => {
     <Main
       meta={
         <Meta
-          title="Atsuzu Portfolio"
+          title="Atsuzu Portfolio | Home"
           description="Projects that will/was be created by Atsuzu"
         />
       }
