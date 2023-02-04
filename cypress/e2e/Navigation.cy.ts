@@ -6,7 +6,7 @@ describe('Navigation', () => {
 
       // The index page should contain an h1
       cy.findByRole('heading', {
-        name: 'Home',
+        name: 'Introduction',
       });
 
       // Find a link containing 'About' text and click it
@@ -26,7 +26,7 @@ describe('Navigation', () => {
 
       // Wait until the page is displayed
       cy.findByRole('heading', {
-        name: 'Home',
+        name: 'Introduction',
       });
 
       cy.percySnapshot('Homepage');
