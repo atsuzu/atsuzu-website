@@ -18,6 +18,7 @@
     // Configuration for TypeScript files
     {
       "files": ["**/*.ts", "**/*.tsx"],
+      "excludedFiles": ["./tailwind.config.js"],
       "plugins": [
         "@typescript-eslint",
         "unused-imports",
@@ -53,6 +54,7 @@
         "simple-import-sort/exports": "error", // Export configuration for `eslint-plugin-simple-import-sort`
         "@typescript-eslint/no-unused-vars": "off",
         "unused-imports/no-unused-imports": "error",
+        "import/no-extraneous-dependencies": "off",
         "unused-imports/no-unused-vars": [
           "error",
           { "argsIgnorePattern": "^_" }

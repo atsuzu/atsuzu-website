@@ -9,14 +9,15 @@ type IMainProps = {
 };
 
 const Main = (props: IMainProps) => (
-  <div className="w-full px-1 text-gray-700 antialiased">
+  <div className="w-full bg-black px-1 text-white antialiased">
     {props.meta}
 
     <div className="mx-auto max-w-screen-md">
       <div className="border-b border-gray-300">
         <div className="pt-16 pb-8">
-          <div className="text-3xl font-bold text-gray-900">
-            {AppConfig.title}
+          <div className="flex items-center text-3xl font-bold text-white">
+            <img src={`/favicon-32x32.png`} alt="Nextjs starter banner" />
+            <div>{AppConfig.title}</div>
           </div>
           <div className="text-xl">{AppConfig.description}</div>
         </div>
@@ -25,7 +26,7 @@ const Main = (props: IMainProps) => (
             <li className="mr-6">
               <Link
                 href="/"
-                className="border-none text-gray-700 hover:text-gray-900"
+                className="border-none text-white hover:text-gray-900"
               >
                 Home
               </Link>
@@ -33,31 +34,31 @@ const Main = (props: IMainProps) => (
             <li className="mr-6">
               <Link
                 href="/about/"
-                className="border-none text-gray-700 hover:text-gray-900"
+                className="border-none text-white hover:text-gray-900"
               >
                 About
               </Link>
             </li>
             <li className="mr-6">
               <a
-                className="border-none text-gray-700 hover:text-gray-900"
+                className="border-none text-white hover:text-gray-900"
                 href="https://github.com/atsuzu/atsuzu-website"
               >
                 GitHub
               </a>
             </li>
-            <li className="mr-6">
+            {/* <li className="mr-6">
               <Link
                 href="/blog/"
                 className="border-none text-gray-700 hover:text-gray-900"
               >
                 Blog
               </Link>
-            </li>
+            </li> */}
             <li className="mr-6">
               <Link
                 href="/privacy-policy/"
-                className="border-none text-gray-700 hover:text-gray-900"
+                className="border-none text-white hover:text-gray-900"
               >
                 Privacy Policy
               </Link>
